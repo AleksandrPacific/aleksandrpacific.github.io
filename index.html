@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Survey Form</title>
+<link href="sfstyle.css" rel="stylesheet">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+	
+</head>
+<body>
+	<header>
+		<h1 id="title"> Booble.nooble Survey Form</h1>
+		<p id="description"> Please, fill the form to help us become better</p>
+	</header>
+	<main>
+	<form action="/somewhere" method="post" id="survey-form">
+	  <section name="contact-details" id="contact-details">
+			<label for="name" id="name-label">Name</label>
+			<input type="text" id="name" name="name" placeholder="Enter your name" required>
+			<label for="email" id="email-label">Email</label>
+			<input type="email" id="email" name="email" placeholder="Enter your actual Email" required>
+			<label for="number" id="number-label">Age</label>			
+		    <input type="number" id="number" name="age" min="1" max="99" placeholder="99">
+		</section>
+		<section name="main-info" id="main-info">
+			<label for="dropdown">What device do you prefer to use Booble.nooble?</label>
+				<select id="dropdown" name="device" >
+					<option disabled selected>Device type</option>
+					<option value="Computer">Computer</option>
+					<option value="laptop">Laptop</option>
+					<option value="phone">Phone</option>
+					<option value="other">Other</option>
+			</select>
+			<fieldset id="hours-use"><p>How long do you use Booble.nooble during the day?</p>
+			<label for="first"><input type="radio" id="first" name="hours-use" value="2-3 hours">2-3 hours</label>
+			<label for="second"><input type="radio" id="second" name="hours-use" value="4-5 hours">4-5 hours</label>
+			<label for="third"><input type="radio" id="third" name="hours-use" value="6-8 hours">6-8 hours</label>
+			</fieldset>
+			<fieldset id="for-what">
+			<p>What do you usually use Booble.nooble for?</p>
+				<label for="games"><input type="checkbox" name="games" id="games" value="games">Games</label>
+				<label for="stream"><input type="checkbox" name="stream" id="stream" value="stream">Streaming services</label>
+				<label for="books"><input type="checkbox" name="books" id="books" value="books">Books</label>
+				<label for="films"><input type="checkbox" name="films" id="films" value="films">Films / TV Shows</label>
+				<label for="news"><input type="checkbox" name="news" id="news" value="news">News</label>
+				<label for="study"><input type="checkbox" name="study" id="study" checked value="study">Study</label>
+			</fieldset>
+			<label for="ad"><input type="checkbox" name="whant-ad" id="ad" value="ad" required>I want to receive special or promotional offers by mail every day</label>
+		</section>
+		<div class="end"><label fot="comments">If you want to offer something write about it below</label>
+		<textarea id="comments" placeholder="Enter your comment here"></textarea>
+		<button type="submit" id="submit">Submit</button></div>
+	</form>
+	  
+</main>
+	<footer>Booble.nooble : "Don't be evil today"</footer>
+</body>
+</html>
